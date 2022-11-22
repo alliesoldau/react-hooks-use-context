@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { UserContext } from "../context/user"
 import ThemedButton from "./ThemedButton";
 import DarkModeToggle from "./DarkModeToggle";
 import defaultUser from "../data";
+import { UserContext } from "../context/user";
 
 function Header() {
   const { user, setUser } = useContext(UserContext);
@@ -28,3 +28,4 @@ function Header() {
 }
 
 export default Header;
+
